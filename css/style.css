@@ -1,2 +1,43 @@
 @charset "UTF-8";
 /* CSS Document */
+/* 共通 */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  color: #231815;
+  /* Medium指定はwindowsの文字かすれ対策 */
+  font-family: '游ゴシック体', YuGothic, '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック', 'Yu Gothic', sans-serif;
+  background: #fff;
+  line-height: 1.5;
+  /* letter-spacing: 0.05em; */
+  /* -webkit-text-size-adjust: 100%; */
+}
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}
+
+/* SP用 */
+header h1 {
+  width: 45px;
+  margin-left: 29px;
+  padding: 10px 0;
+}
+/* TODO:ハンバーガーメニューの実装 */
+header nav {
+  display: none;
+}
+/* TODO:メインビジュアルはスライドショーにする */
+/* TODO:画像のpictureタグ出し分け */
+article#about {
+  background: #cdba7f;
+}
+article#products section {
+  background: #d6c696;
+}
+article#contact {
+  background: #cdba7f;
+}
