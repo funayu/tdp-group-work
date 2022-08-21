@@ -18,6 +18,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+a {
+  text-decoration: none;
+}
 
 /* SP用 */
 header h1 {
@@ -101,13 +104,131 @@ article#about .logo_img {
   text-align: center;
 }
 article#about .logo_img img {
-  width: 61.39px;
-  height: 100px;
+  width: 16.37vw;
+  height: 26.666vw;
   object-fit: contain;
 }
-
+article#products {
+  padding: 53px 0 67px;
+  /* TODO:画像に差し替える */
+  background: #000;
+}
+article#products .inner {
+  padding: 27.5px;
+}
+article#products h2 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+article#products h2 span {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+article#products h2 + p {
+  color: #fff;
+  margin-bottom: 40px;
+}
+/* TODO:斜めにする */
 article#products section {
-  background: #d6c696;
+  background: rgba(205, 186, 127, 0.8);
+  margin-bottom: 126px;
+}
+article#products section .product_img {
+  width: 74.666vw;
+  height: 74.666vw;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+article#products section img {
+  object-fit: contain;
+}
+article#products section h3 {
+  font-size: 20px;
+  color: #8f1c18;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+article#products section p {
+  margin-bottom: 18px;
+}
+article#products section dl {
+  margin-bottom: 48px;
+}
+article#products section dl dd {
+  margin-bottom: 37px;
+}
+article#products section a {
+  display: block;
+  background-color: #641311;
+  color: #fff;
+  text-align: center;
+  width: 74.4vw;
+  margin: 0 auto 40px;
+  font-weight: bold;
+  padding: 17px 0;
+}
+article#how_to {
+  padding: 120px 0;
+  background-image: url(../images/common/frame_top_left.svg), url(../images/common/frame_top_right.svg),
+    url(../images/common/frame_bottom_left.svg), url(../images/common/frame_bottom_right.svg);
+  background-position: left 0 top 0, right 0 top 0, left 0 bottom 0, right 0 bottom 0;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 20.317vw auto, 20.317vw auto, 20.317vw auto, 20.317vw auto;
+}
+article#how_to .inner {
+  padding: 0 28px;
+}
+article#how_to h2 {
+  color: #855339;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+article#how_to h2 span {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+article#how_to h2 ~ p {
+  color: #855339;
+}
+article#how_to h2 ~ p:last-of-type {
+  margin-bottom: 88.5px;
+}
+article#how_to section {
+  margin-bottom: 80.5px;
+}
+article#how_to section .how_to_img {
+  text-align: center;
+  margin-bottom: 60px;
+}
+article#how_to section .container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+article#how_to section h3 {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 20px;
+  font-weight: bold;
+  color: #8f1c18;
+  border: 2px solid #8f1c18;
+  border-top: none;
+  border-bottom: none;
+  padding: 10px 7.5px;
+  letter-spacing: 0.43em;
+  margin-left: 18.5px;
+}
+
+article#how_to section p {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  height: 345px;
+  line-height: 2;
 }
 article#contact {
   background: #cdba7f;
