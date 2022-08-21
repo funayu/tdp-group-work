@@ -31,11 +31,11 @@ header nav {
 }
 /* TODO:メインビジュアルはスライドショーにする */
 /* TODO:画像のpictureタグ出し分け */
+#top_main img {
+  max-width: none;
+  width: 100%;
+}
 article#about {
-  /* background-image: url(../images/common/flag.svg); */
-  /* background-repeat: no-repeat; */
-  /* background-size: 990px auto; */
-  /* background-position: 20% 64%; */
   background: url(../images/common/flag.svg) no-repeat 13% 49%/880px auto;
   padding: 136.5px 0 40px;
   position: relative;
