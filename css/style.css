@@ -93,9 +93,9 @@ article#about h2 span::after {
   left: 0;
 }
 article#about p {
-  padding: 0 28px;
+  width: 85.066vw;
   line-height: 1.678;
-  margin-bottom: 1em;
+  margin: 0 auto 1em;
 }
 article#about p:last-of-type {
   margin-bottom: 40px;
@@ -114,7 +114,9 @@ article#products {
   background: #000;
 }
 article#products .inner {
-  padding: 27.5px;
+  /* padding: 27.5px; */
+  width: 85.333vw;
+  margin: 0 auto;
 }
 article#products h2 {
   color: #fff;
@@ -178,7 +180,9 @@ article#how_to {
   background-size: 20.317vw auto, 20.317vw auto, 20.317vw auto, 20.317vw auto;
 }
 article#how_to .inner {
-  padding: 0 28px;
+  /* padding: 0 28px; */
+  width: 85.066vw;
+  margin: 0 auto;
 }
 article#how_to h2 {
   color: #855339;
@@ -222,14 +226,91 @@ article#how_to section h3 {
   padding: 10px 7.5px;
   letter-spacing: 0.43em;
   margin-left: 18.5px;
+  position: relative;
 }
-
+article#how_to section:first-of-type h3 {
+  height: 8.5em;
+}
+article#how_to section:nth-of-type(2) h3 {
+  height: 15.5em;
+}
+article#how_to section:nth-of-type(3) h3 {
+  height: 11.5em;
+}
+article#how_to section:last-of-type h3 {
+  height: 12.5em;
+}
 article#how_to section p {
   writing-mode: vertical-rl;
   text-orientation: upright;
   height: 345px;
-  line-height: 2;
 }
 article#contact {
+  padding: 80px 0 0;
+  position: relative;
+}
+article#contact::after {
+  content: '';
+  background: rgba(205, 186, 127, 0.85);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+article#contact .inner {
+  /* padding: 0 28px; */
+  width: 85.066vw;
+  margin: 0 auto;
   background: #cdba7f;
+  position: relative;
+  z-index: 1;
+  padding: 43px 0 105px;
+}
+article#contact h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+article#contact h2 span {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 9px;
+}
+article#contact form {
+  width: 72.24vw;
+  margin: 0 auto;
+}
+article#contact form dl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+article#contact form dl dt {
+  font-weight: bold;
+  width: 100%;
+}
+article#contact form dl dt.required::after {
+  content: '※必須';
+  color: #be2720;
+  padding-left: 1em;
+}
+article#contact form dl dt {
+  margin-bottom: 6px;
+}
+article#contact form dl dd {
+  width: 100%;
+  margin-bottom: 20px;
+}
+article#contact form dl dd input[type='text'],
+article#contact form dl dd input[type='email'],
+article#contact form dl dd textarea {
+  width: 100%;
+  height: 30px;
+}
+article#contact form dl dd.post_code1 {
+  width: 30%;
+}
+article#contact form dl dd.post_code2 {
+  width: 60%;
 }

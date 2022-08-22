@@ -192,7 +192,7 @@
               </picture>
             </div>
             <div class="container">
-              <h3>自分のだけのために</h3>
+              <h3>自分だけのために</h3>
               <p>ついつい周りを気遣って、自分は後回しになっていませんか。</p>
               <p>
                 シニアバレンタインを広めたいのは、そのようなシニアの皆様に自分のためだけの贅沢な時間をお過ごしいただきたいから。
@@ -211,46 +211,42 @@
           <form action="index.html" method="post" id="contact_form">
             <dl>
               <dt class="required">お名前</dt>
-              <dd><input type="text" size="30" name="name" id="name" required /></dd>
+              <dd><input type="text" name="name" id="name" required /></dd>
               <dt>ふりがな</dt>
-              <dd><input type="text" size="30" name="furigana" id="furigana" /></dd>
+              <dd><input type="text" name="furigana" id="furigana" /></dd>
               <dt>電話番号</dt>
-              <dd><input type="text" size="30" name="tel" id="tel" /></dd>
+              <dd><input type="text" name="tel" id="tel" /></dd>
               <dt>郵便番号</dt>
-              <dd>
-                <input type="text" size="30" name="post_code1" id="post_code1" />
+              <dd class="post_code1">
+                <input type="text" name="post_code1" id="post_code1" />
               </dd>
-              <dd>
-                <input type="text" size="30" name="post_code2" id="post_code2" />
+              <div>-</div>
+              <dd class="post_code2">
+                <input type="text" name="post_code2" id="post_code2" />
               </dd>
               <dt>住所</dt>
-              <dd><input type="text" size="30" name="address" id="address" /></dd>
+              <dd><input type="text" name="address" id="address" /></dd>
               <dt class="required">Eメール</dt>
               <dd>
-                <input type="email" size="30" name="email" id="email" required />
+                <input type="email" name="email" id="email" required />
               </dd>
               <dt class="required">Eメール（確認用）</dt>
               <dd>
-                <input type="email" size="30" name="email_confirmation" id="email_confirmation" required />
+                <input type="email" name="email_confirmation" id="email_confirmation" required />
               </dd>
               <dt>お問い合わせ概要</dt>
               <dd>
-                <input
-                  type="radio"
-                  name="inquiry_overview"
-                  id="inquiry_overview1"
-                  value="商品の購入について"
-                  checked
-                />商品の購入について
-                <input
-                  type="radio"
-                  name="inquiry_overview"
-                  id="inquiry_overview2"
-                  value="その他 商品について"
-                />その他&nbsp;商品について
+                <input type="radio" name="inquiry_overview" id="inquiry_overview1" value="商品の購入について" checked />
+                商品の購入について
+              </dd>
+              <dd>
+                <input type="radio" name="inquiry_overview" id="inquiry_overview2" value="その他 商品について" />
+                その他&nbsp;商品について
               </dd>
               <dt>お問い合わせ詳細</dt>
-              <dd><textarea name="inquiry_detail" id="inquiry_detail" rows="5" cols="30"></textarea></dd>
+              <dd>
+                <textarea name="inquiry_detail" id="inquiry_detail"></textarea>
+              </dd>
             </dl>
             <input type="submit" value="送信" />
             <h3>個人情報について</h3>
