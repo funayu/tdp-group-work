@@ -109,33 +109,56 @@ article#about .logo_img img {
   object-fit: contain;
 }
 article#products {
-  padding: 53px 0 67px;
-  /* TODO:画像に差し替える */
-  background: #000;
+  padding: 53px 0 90px;
+  background-image: -webkit-image-set(
+    url(../images/products/bg_cocolate_sp@750.jpg) 1x,
+    url(../images/products/bg_cocolate_sp@750.jpg) 2x,
+    url(../images/products/bg_chocolate_sp@1125.jpg) 3x
+  );
+  background-image: image-set(
+    url(../images/products/bg_cocolate_sp@750.jpg) 1x,
+    url(../images/products/bg_cocolate_sp@750.jpg) 2x,
+    url(../images/products/bg_chocolate_sp@1125.jpg) 3x
+  );
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 article#products .inner {
-  /* padding: 27.5px; */
   width: 85.333vw;
   margin: 0 auto;
 }
 article#products h2 {
   color: #fff;
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 article#products h2 span {
   display: block;
   font-size: 16px;
-  margin-bottom: 12px;
+  margin-bottom: 4px;
 }
 article#products h2 + p {
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 93px;
 }
-/* TODO:斜めにする */
 article#products section {
   background: rgba(205, 186, 127, 0.8);
   margin-bottom: 126px;
+  padding: 52.5px 0;
+}
+article#products section:first-of-type {
+  transform: skewY(8deg);
+}
+article#products section:first-of-type > .inner {
+  transform: skewY(-8deg);
+}
+article#products section:nth-of-type(2) {
+  transform: skewY(-8deg);
+  margin-bottom: 0;
+}
+article#products section:nth-of-type(2) > .inner {
+  transform: skewY(8deg);
 }
 article#products section .product_img {
   width: 74.666vw;
@@ -167,7 +190,7 @@ article#products section a {
   color: #fff;
   text-align: center;
   width: 74.4vw;
-  margin: 0 auto 40px;
+  margin: 0 auto;
   font-weight: bold;
   padding: 17px 0;
 }
@@ -180,7 +203,6 @@ article#how_to {
   background-size: 20.317vw auto, 20.317vw auto, 20.317vw auto, 20.317vw auto;
 }
 article#how_to .inner {
-  /* padding: 0 28px; */
   width: 85.066vw;
   margin: 0 auto;
 }
@@ -188,26 +210,49 @@ article#how_to h2 {
   color: #855339;
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 1em;
+  margin-bottom: 10px;
 }
 article#how_to h2 span {
   display: block;
   font-size: 12px;
   font-weight: normal;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 article#how_to h2 ~ p {
   color: #855339;
 }
 article#how_to h2 ~ p:last-of-type {
-  margin-bottom: 88.5px;
+  margin-bottom: 80.5px;
 }
 article#how_to section {
   margin-bottom: 80.5px;
 }
+article#how_to section:last-of-type {
+  margin-bottom: 0;
+}
 article#how_to section .how_to_img {
-  text-align: center;
-  margin-bottom: 60px;
+  width: 66.666vw;
+  margin: 0 auto 60px;
+  position: relative;
+  z-index: 0;
+}
+article#how_to section:nth-of-type(2n + 1) .how_to_img::after {
+  background-color: #8f1c18;
+  opacity: 0.85;
+}
+article#how_to section:nth-of-type(2n) .how_to_img::after {
+  background-color: #e3625d;
+  opacity: 0.5;
+}
+article#how_to section .how_to_img::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  top: 20px;
+  left: 20px;
+  z-index: -1;
 }
 article#how_to section .container {
   display: flex;
@@ -262,10 +307,24 @@ article#contact .inner {
   /* padding: 0 28px; */
   width: 85.066vw;
   margin: 0 auto;
-  background: #cdba7f;
   position: relative;
   z-index: 1;
-  padding: 43px 0 105px;
+  padding: 43px 0 0;
+}
+article#contact > .inner {
+  background: #cdba7f;
+  padding-bottom: 14px;
+  margin-bottom: 55px;
+}
+article#contact .outer .inner {
+  padding: 6px 0 105px;
+  background: none;
+}
+article#contact .outer {
+  background-image: url(../images/common/flag.svg);
+  background-repeat: no-repeat;
+  background-position: center 17%;
+  background-size: 228% auto;
 }
 article#contact h2 {
   font-size: 20px;
@@ -302,15 +361,55 @@ article#contact form dl dd {
   width: 100%;
   margin-bottom: 20px;
 }
+article#contact form dl dt.inquiry_overview_title + dd {
+  margin-bottom: 0;
+}
 article#contact form dl dd input[type='text'],
 article#contact form dl dd input[type='email'],
 article#contact form dl dd textarea {
   width: 100%;
   height: 30px;
+  border: none;
 }
 article#contact form dl dd.post_code1 {
   width: 30%;
 }
 article#contact form dl dd.post_code2 {
   width: 60%;
+}
+article#contact form dl dd textarea {
+  height: 200px;
+}
+article#contact form input[type='submit'] {
+  width: 37.066vw;
+  background: #641311;
+  color: #fff;
+  line-height: 50px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  font-weight: bold;
+}
+article#contact h3 + p {
+  font-size: 12px;
+}
+footer {
+  text-align: center;
+}
+footer .inner {
+  background-image: url(../images/common/frame_top_left.svg), url(../images/common/frame_top_right.svg),
+    url(../images/common/frame_bottom_left.svg), url(../images/common/frame_bottom_right.svg);
+  background-position: left -10px top -10px, right -10px top -10px, left -10px bottom -10px, right -10px bottom -10px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 20.317vw auto, 20.317vw auto, 20.317vw auto, 20.317vw auto;
+}
+footer .footer_img {
+  width: 12vw;
+  margin: 0 auto;
+  padding: 30px 0 49px;
+}
+footer small {
+  font-size: 14px;
+  color: #855339;
+  padding-bottom: 5px;
 }
