@@ -305,7 +305,6 @@ article#contact::after {
   bottom: 0;
 }
 article#contact .inner {
-  /* padding: 0 28px; */
   width: 85.066vw;
   margin: 0 auto;
   position: relative;
@@ -344,7 +343,7 @@ article#contact form {
 article#contact form dl {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 article#contact form dl dt {
   font-weight: bold;
@@ -374,6 +373,10 @@ article#contact form dl dd textarea {
 }
 article#contact form dl dd.post_code1 {
   width: 30%;
+}
+article#contact form dl .post_code_hyphen {
+  width: 10%;
+  text-align: center;
 }
 article#contact form dl dd.post_code2 {
   width: 60%;
@@ -511,5 +514,38 @@ footer small {
     padding: 88px 0 80px;
     background-position: left -30px top -30px, right -30px top -30px, left -30px bottom -30px, right -30px bottom -30px;
     background-size: 20.317vw auto, 20.317vw auto, 20.317vw auto, 20.317vw auto;
+  }
+  article#how_to .inner {
+    width: 79.166vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  article#how_to h2 {
+    font-size: 25px;
+    margin-bottom: 4px;
+  }
+  article#how_to h2 span {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  article#how_to h2 ~ p {
+    font-size: 18px;
+  }
+  article#how_to section .how_to_img {
+    width: 32.553vw;
+  }
+  article#contact > .inner {
+    padding-bottom: 80px;
+    margin-bottom: 0;
+  }
+  article#contact form dl dd.inquiry_overview {
+    width: 35%;
+  }
+  article#contact form input[type='submit'] {
+    width: 18.098vw;
+  }
+  article#contact .outer {
+    background: none;
   }
 }
