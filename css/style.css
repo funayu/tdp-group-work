@@ -23,6 +23,9 @@ a {
 }
 
 /* SP用 */
+.br_tab {
+  display: none;
+}
 header h1 {
   width: 45px;
   margin-left: 29px;
@@ -66,8 +69,6 @@ article#about h2 {
 article#about h2 span {
   font-size: 30px;
   display: block;
-  border-top: none;
-  border-bottom: none;
   letter-spacing: 0.05em;
   position: relative;
   padding: 0 calc(8px + 11.5px) 0 8px;
@@ -199,7 +200,7 @@ article#how_to {
   background-image: url(../images/common/frame_top_left.svg), url(../images/common/frame_top_right.svg),
     url(../images/common/frame_bottom_left.svg), url(../images/common/frame_bottom_right.svg);
   background-position: left 0 top 0, right 0 top 0, left 0 bottom 0, right 0 bottom 0;
-  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: 20.317vw auto, 20.317vw auto, 20.317vw auto, 20.317vw auto;
 }
 article#how_to .inner {
@@ -412,4 +413,103 @@ footer small {
   font-size: 14px;
   color: #855339;
   padding-bottom: 5px;
+}
+
+/* TAB用 */
+@media screen and (min-width: 600px) {
+  .br_tab {
+    display: inline;
+  }
+  article#about {
+    background-position: -253% 44%;
+    padding: 146px 0 80px;
+  }
+  article#about h2 {
+    margin-bottom: 217px;
+    height: 380px;
+  }
+  article#about h2 span {
+    font-size: 25px;
+    letter-spacing: 0.15em;
+  }
+  article#about .inner:nth-of-type(2) {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80.208vw;
+    height: 484px;
+    margin: 0 auto;
+  }
+  article#about p {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    width: auto;
+    margin: 0 0 0 7.161vw;
+  }
+  article#about .logo_img {
+    align-self: flex-end;
+  }
+  article#about .logo_img img {
+    width: 7.993vw;
+    height: 13.02vw;
+    object-fit: contain;
+  }
+  article#products {
+    padding: 80px 0 126px;
+    background-image: url(../images/products/bg_chocolate_tab@1536.jpg);
+  }
+  article#products .inner {
+    width: 79.947vw;
+  }
+  article#products section > .inner {
+    width: 70.833vw;
+  }
+  article#products h2 {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+  article#products h2 span {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+  article#products h2 + p {
+    font-size: 18px;
+    margin-bottom: 119px;
+  }
+  article#products section {
+    margin-bottom: 166px;
+    padding: 70px 0 85px;
+  }
+  article#products section:first-of-type {
+    transform: skewY(6.795deg);
+  }
+  article#products section:first-of-type > .inner {
+    transform: skewY(-6.795deg);
+  }
+  article#products section:nth-of-type(2) {
+    transform: skewY(-6.795deg);
+  }
+  article#products section:nth-of-type(2) > .inner {
+    transform: skewY(6.795deg);
+  }
+  article#products section .product_img {
+    width: 52.083vw;
+    height: 52.083vw;
+    margin: 0 auto;
+    margin-bottom: 63.5px;
+  }
+  article#products section h3 {
+    margin-bottom: 38px;
+    text-align: center;
+  }
+  article#products section p {
+    margin-bottom: 38px;
+  }
+  article#products section a {
+    width: 35.026vw;
+  }
+  article#how_to {
+    padding: 88px 0 80px;
+    background-position: left -30px top -30px, right -30px top -30px, left -30px bottom -30px, right -30px bottom -30px;
+    background-size: 20.317vw auto, 20.317vw auto, 20.317vw auto, 20.317vw auto;
+  }
 }
