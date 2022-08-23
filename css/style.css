@@ -595,6 +595,10 @@ footer small {
   header {
     display: flex;
     height: 120px;
+    justify-content: space-between;
+  }
+  header h1 {
+    margin-left: 66.5px;
   }
   header nav {
     display: block;
@@ -602,5 +606,9 @@ footer small {
   header nav ul {
     display: flex;
     padding: 48px 0;
+  }
+  header nav ul li {
+    width: 240px;
+    text-align: center;
   }
 }
