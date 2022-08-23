@@ -361,6 +361,9 @@ article#contact form dl dd {
   width: 100%;
   margin-bottom: 20px;
 }
+article#contact form dl dd:last-of-type {
+  margin-bottom: 40px;
+}
 article#contact form dl dt.inquiry_overview_title + dd {
   margin-bottom: 0;
 }
@@ -535,9 +538,22 @@ footer small {
   article#how_to section .how_to_img {
     width: 32.553vw;
   }
+  article#contact {
+    padding-bottom: 80px;
+    background-image: url(../images/common/flag.svg);
+    background-repeat: no-repeat;
+    background-position: center 200%;
+    background-size: 120% auto;
+  }
   article#contact > .inner {
     padding-bottom: 80px;
     margin-bottom: 0;
+  }
+  article#contact form {
+    width: 71.354vw;
+  }
+  article#contact form dl dd:last-of-type {
+    margin-bottom: 80px;
   }
   article#contact form dl dd.inquiry_overview {
     width: 35%;
@@ -547,5 +563,14 @@ footer small {
   }
   article#contact .outer {
     background: none;
+  }
+  article#contact .outer .inner {
+    background-color: #cdba7f;
+    padding: 0 0 46.5px;
+  }
+  article#contact h3,
+  article#contact h3 + p {
+    width: 71.354vw;
+    margin: 0 auto;
   }
 }
