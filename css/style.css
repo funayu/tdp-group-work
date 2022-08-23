@@ -112,14 +112,14 @@ article#about .logo_img img {
 article#products {
   padding: 53px 0 90px;
   background-image: -webkit-image-set(
-    url(../images/products/bg_cocolate_sp@750.jpg) 1x,
-    url(../images/products/bg_cocolate_sp@750.jpg) 2x,
-    url(../images/products/bg_chocolate_sp@1125.jpg) 3x
+    url(../images/products/bg_chocolate_sp@856.jpg) 1x,
+    url(../images/products/bg_chocolate_sp@856.jpg) 2x,
+    url(../images/products/bg_chocolate_sp@1284.jpg) 3x
   );
   background-image: image-set(
-    url(../images/products/bg_cocolate_sp@750.jpg) 1x,
-    url(../images/products/bg_cocolate_sp@750.jpg) 2x,
-    url(../images/products/bg_chocolate_sp@1125.jpg) 3x
+    url(../images/products/bg_chocolate_sp@856.jpg) 1x,
+    url(../images/products/bg_chocolate_sp@856.jpg) 2x,
+    url(../images/products/bg_chocolate_sp@1284.jpg) 3x
   );
   background-position: center center;
   background-repeat: no-repeat;
