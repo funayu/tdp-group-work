@@ -58,7 +58,8 @@ article#about::after {
   top: 0;
   bottom: 0;
 }
-article#about .inner {
+article#about .about_title,
+article#about .about_content {
   position: relative;
   z-index: 1;
 }
@@ -441,7 +442,7 @@ footer small {
     font-size: 25px;
     letter-spacing: 0.15em;
   }
-  article#about .inner:nth-of-type(2) {
+  article#about .about_content {
     display: flex;
     flex-direction: row-reverse;
     width: 80.208vw;
@@ -453,6 +454,9 @@ footer small {
     text-orientation: upright;
     width: auto;
     margin: 0 0 0 7.161vw;
+  }
+  article#about p:last-of-type {
+    margin-bottom: 0;
   }
   article#about .logo_img {
     align-self: flex-end;
@@ -610,5 +614,48 @@ footer small {
   header nav ul li {
     width: 240px;
     text-align: center;
+  }
+  article#about {
+    background-size: 1262px auto;
+    background-position: center right -631px;
+    padding: 80.5px 0 93.5px;
+  }
+  article#about .inner {
+    width: 980px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+  }
+  article#about .about_title {
+    margin-left: 35px;
+  }
+  article#about h2 {
+    margin-bottom: 0;
+  }
+  article#about h2 span {
+    font-size: 30px;
+    letter-spacing: 0;
+  }
+  article#about .about_content {
+    width: 647px;
+    justify-content: space-between;
+    height: 486px;
+    position: relative;
+    margin: 0;
+  }
+  article#about .about_content .logo_img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+  }
+  article#about p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 2;
+  }
+  article#about .logo_img img {
+    width: 110.5px;
+    height: 180px;
   }
 }
