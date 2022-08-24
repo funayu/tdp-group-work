@@ -10,6 +10,9 @@
     <title>SYOWA | シニア世代向けプレゼント用高級志向チョコレート</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.css" />
+    <script src="js/swiper-bundle.js" defer></script>
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <header>
@@ -25,16 +28,62 @@
         </ul>
       </nav>
     </header>
-    <div id="top_main">
-      <picture>
-        <source
-          media="(max-width: 599px)"
-          srcset="images/top_main/topmain00_sp@856.jpg 2x, images/top_main/topmain00_sp@1284.jpg 3x"
-        />
-        <source media="(max-width: 979px)" srcset="images/top_main/topmain00_tab@1668.jpg 2x" />
-        <img src="images/top_main/topmain00_pc@2000.jpg" alt="SYOWAパッケージイメージ" />
-      </picture>
+    <!-- スライダーのコンテナ -->
+    <div id="top_main" class="swiper">
+      <!-- 必要に応じたwrapper -->
+      <div class="swiper-wrapper">
+        <!-- スライド -->
+        <div class="swiper-slide">
+          <picture>
+            <source
+              media="(max-width: 599px)"
+              srcset="images/top_main/topmain00_sp@856.jpg 2x, images/top_main/topmain00_sp@1284.jpg 3x"
+            />
+            <source media="(max-width: 979px)" srcset="images/top_main/topmain00_tab@1668.jpg 2x" />
+            <img src="images/top_main/topmain00_pc@2000.jpg" alt="SYOWAパッケージイメージ" />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              media="(max-width: 599px)"
+              srcset="images/top_main/topmain01_sp@856.jpg 2x, images/top_main/topmain01_sp@1284.jpg 3x"
+            />
+            <source media="(max-width: 979px)" srcset="images/top_main/topmain01_tab@1668.jpg 2x" />
+            <img src="images/top_main/topmain01_pc@2000.jpg" alt="愛するあの方へ贈るチョコレート" />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              media="(max-width: 599px)"
+              srcset="images/top_main/topmain02_sp@856.jpg 2x, images/top_main/topmain02_sp@1284.jpg 3x"
+            />
+            <source media="(max-width: 979px)" srcset="images/top_main/topmain02_tab@1668.jpg 2x" />
+            <img src="images/top_main/topmain02_pc@2000.jpg" alt="芳酵なカカオとミルクの味" />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              media="(max-width: 599px)"
+              srcset="images/top_main/topmain03_sp@856.jpg 2x, images/top_main/topmain03_sp@1284.jpg 3x"
+            />
+            <source media="(max-width: 979px)" srcset="images/top_main/topmain03_tab@1668.jpg 2x" />
+            <img
+              src="images/top_main/topmain03_pc@2000.jpg"
+              alt="昭和生まれのシニア世代によるシニアバレンタインのための高級志向チョコレート SYOWA"
+            />
+          </picture>
+        </div>
+        <!-- .swiper-slideの終了タグ -->
+      </div>
+      <!-- .swiper-wrapperの終了タグ -->
+      <!-- ページネーション -->
+      <div class="swiper-pagination"></div>
+      <!-- swiper-paginationの終了タグ -->
     </div>
+    <!-- .swiperの終了タグ -->
     <main>
       <article id="about">
         <div class="inner">

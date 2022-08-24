@@ -434,6 +434,10 @@ footer small {
   color: #855339;
   padding-bottom: 5px;
 }
+/* swiper用の設定 */
+.swiper-pagination-bullet {
+  background: #be2720 !important;
+}
 
 /* TAB用 */
 @media screen and (min-width: 600px) {
