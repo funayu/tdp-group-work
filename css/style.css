@@ -389,6 +389,12 @@ article#contact form dl dd.post_code .post_code_hyphen {
 article#contact form dl dd.post_code input#post_code2 {
   width: 60%;
 }
+article#contact form dl dd.inquiry_overview div:last-of-type {
+  margin-bottom: 28px;
+}
+article#contact form dl dd.inquiry_overview span {
+  font-weight: bold;
+}
 article#contact form dl dd textarea {
   height: 200px;
 }
@@ -565,7 +571,13 @@ footer small {
     margin-bottom: 80px;
   }
   article#contact form dl dd.inquiry_overview {
-    width: 35%;
+    display: flex;
+  }
+  article#contact form dl dd.inquiry_overview div {
+    margin-right: 1em;
+  }
+  article#contact form dl dd textarea {
+    height: 150px;
   }
   article#contact form input[type='submit'] {
     width: 18.098vw;
@@ -765,5 +777,19 @@ footer small {
   article#contact form dl dd input[type='email'],
   article#contact form dl dd textarea {
     width: 100%;
+  }
+  article#contact form input[type='submit'] {
+    width: 139px;
+  }
+  article#contact .outer .inner {
+    width: 980px;
+    padding-bottom: 60px;
+  }
+  article#contact h3,
+  article#contact h3 + p {
+    width: 878px;
+  }
+  article#contact h3 {
+    font-size: 18px;
   }
 }
