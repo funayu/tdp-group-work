@@ -626,13 +626,14 @@ footer small {
   }
   header nav {
     display: block;
+    width: 72.058%;
   }
   header nav ul {
     display: flex;
     padding: 48px 0;
   }
   header nav ul li {
-    width: 240px;
+    width: 25%;
     text-align: center;
   }
   article#about {

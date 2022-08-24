@@ -8,7 +8,7 @@ const swiper = new Swiper('.swiper', {
   // 自動で次のスライドに移動する
   autoplay: {
     // 移動するまでの時間
-    delay: 4000,
+    delay: 3000,
   },
   // スライドの切り替わり方
   effect: 'fade',
