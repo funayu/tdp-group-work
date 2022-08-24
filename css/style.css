@@ -38,8 +38,6 @@ header nav {
 header nav ul li a {
   color: #855339;
 }
-/* TODO:メインビジュアルはスライドショーにする */
-/* TODO:画像のpictureタグ出し分け */
 #top_main img {
   max-width: none;
   width: 100%;
