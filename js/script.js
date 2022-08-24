@@ -12,6 +12,6 @@ const swiper = new Swiper('.swiper', {
   },
   // スライドの切り替わり方
   effect: 'fade',
-  //
+  // 次のスライドに切り替わる速度
   speed: 1500,
 })
