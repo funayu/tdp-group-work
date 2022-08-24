@@ -710,4 +710,28 @@ footer small {
     width: 250px;
     margin: 0;
   }
+  article#how_to {
+    padding: 78px 0 135.5px;
+    background-position: left -20px top -20px, right -20px top -20px, left -20px bottom -20px, right -20px bottom -20px;
+    background-size: 130px auto, 130px auto, 130px auto, 130px auto;
+  }
+  article#how_to .inner {
+    width: 980px;
+  }
+  article#how_to h2 {
+    font-size: 30px;
+  }
+  article#how_to h2 ~ p:last-of-type {
+    margin-bottom: 100px;
+  }
+  article#how_to section {
+    margin-bottom: 0;
+  }
+  article#how_to section .how_to_img {
+    width: 400px;
+  }
+  article#how_to section p {
+    line-height: 2;
+    height: 336px;
+  }
 }
