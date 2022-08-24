@@ -352,14 +352,12 @@ article#contact form dl {
 article#contact form dl dt {
   font-weight: bold;
   width: 100%;
+  margin-bottom: 6px;
 }
 article#contact form dl dt.required::after {
   content: '※必須';
   color: #be2720;
   padding-left: 1em;
-}
-article#contact form dl dt {
-  margin-bottom: 6px;
 }
 article#contact form dl dd {
   width: 100%;
@@ -733,5 +731,46 @@ footer small {
   article#how_to section p {
     line-height: 2;
     height: 336px;
+  }
+  article#contact {
+    background-position: center bottom -631px;
+    background-size: 1262px auto;
+  }
+  article#contact > .inner {
+    width: 980px;
+    padding-top: 80px;
+  }
+  article#contact h2 {
+    font-size: 30px;
+    margin-bottom: 80px;
+  }
+  article#contact h2 span {
+    margin-bottom: 0;
+  }
+  article#contact form {
+    width: 878px;
+  }
+  article#contact form dl dt {
+    width: 32%;
+    margin-bottom: 0;
+  }
+  article#contact form dl dd {
+    width: 68%;
+    margin-bottom: 20px;
+  }
+  article#contact form dl dd input[type='text'],
+  article#contact form dl dd input[type='email'],
+  article#contact form dl dd textarea {
+    width: 100%;
+  }
+  article#contact form dl dd.post_code1 {
+    width: calc(192 / 878 * 100%);
+  }
+  article#contact form dl .post_code_hyphen {
+    /* width: calc(27 / 878 * 100%); */
+    width: 1em;
+  }
+  article#contact form dl dd.post_code2 {
+    width: calc(381 / 878 * 100%);
   }
 }
