@@ -658,4 +658,56 @@ footer small {
     width: 110.5px;
     height: 180px;
   }
+  article#products {
+    background-image: url(../images/products/bg_chocolate_pc@2000.jpg);
+  }
+  article#products .inner,
+  article#products section > .inner {
+    width: 980px;
+  }
+  article#products h2 {
+    font-size: 30px;
+  }
+  article#products h2 + p {
+    margin-bottom: 80px;
+  }
+  article#products section {
+    margin-bottom: 145px;
+    padding: 86px 0 127px;
+  }
+  article#products section > .inner {
+    display: flex;
+  }
+  article#products section:first-of-type {
+    transform: skewY(4deg);
+  }
+  article#products section:first-of-type > .inner {
+    transform: skewY(-4deg);
+  }
+  article#products section:nth-of-type(2) {
+    transform: skewY(-4deg);
+  }
+  article#products section:nth-of-type(2) > .inner {
+    transform: skewY(4deg);
+  }
+  article#products section .product_img {
+    width: 400px;
+    height: 400px;
+    margin: 0 40px 0 0;
+  }
+  article#products section .product_detail {
+    width: 450px;
+  }
+  article#products section h3 {
+    margin-bottom: 42px;
+    font-size: 25px;
+    text-align: left;
+  }
+  article#products section dl dd:last-of-type {
+    margin-bottom: 0;
+  }
+  article#products section a {
+    width: 250px;
+    margin: 0;
+  }
 }
