@@ -9,6 +9,8 @@ const swiper = new Swiper('.swiper', {
   autoplay: {
     // 移動するまでの時間
     delay: 3000,
+    // ユーザー操作でスライドしたあと、自動再生を再開する
+    disableOnInteraction: false,
   },
   // スライドの切り替わり方
   effect: 'fade',
