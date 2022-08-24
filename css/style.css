@@ -376,14 +376,17 @@ article#contact form dl dd textarea {
   height: 30px;
   border: none;
 }
-article#contact form dl dd.post_code1 {
+article#contact form dl dd.post_code {
+  display: flex;
+}
+article#contact form dl dd.post_code input#post_code1 {
   width: 30%;
 }
-article#contact form dl .post_code_hyphen {
+article#contact form dl dd.post_code .post_code_hyphen {
   width: 10%;
   text-align: center;
 }
-article#contact form dl dd.post_code2 {
+article#contact form dl dd.post_code input#post_code2 {
   width: 60%;
 }
 article#contact form dl dd textarea {
@@ -762,15 +765,5 @@ footer small {
   article#contact form dl dd input[type='email'],
   article#contact form dl dd textarea {
     width: 100%;
-  }
-  article#contact form dl dd.post_code1 {
-    width: calc(192 / 878 * 100%);
-  }
-  article#contact form dl .post_code_hyphen {
-    /* width: calc(27 / 878 * 100%); */
-    width: 1em;
-  }
-  article#contact form dl dd.post_code2 {
-    width: calc(381 / 878 * 100%);
   }
 }
