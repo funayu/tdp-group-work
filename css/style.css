@@ -426,6 +426,9 @@ footer .footer_img {
   margin: 0 auto;
   padding: 30px 0 49px;
 }
+footer ul {
+  display: none;
+}
 footer small {
   font-size: 14px;
   color: #855339;
@@ -791,5 +794,27 @@ footer small {
   }
   article#contact h3 {
     font-size: 18px;
+  }
+  footer .inner {
+    background-position: left -20px top -20px, right -20px top -20px, left -20px bottom -20px, right -20px bottom -20px;
+    background-size: 132px auto, 132px auto, 132px auto, 132px auto;
+    margin-bottom: 30px;
+  }
+  footer .footer_img {
+    width: 88px;
+    padding: 125px 0 101px;
+  }
+  footer ul {
+    display: flex;
+    width: 980px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  footer ul li {
+    width: 25%;
+    line-height: 60px;
+  }
+  footer ul li a {
+    color: #855339;
   }
 }
