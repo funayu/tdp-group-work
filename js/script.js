@@ -20,6 +20,23 @@ const swiper = new Swiper('.swiper', {
 })
 
 $(document).ready(function () {
+  // 途中からヘッダー固定
+  $(window).scroll(function () {
+    // ヘッダーの高さを取得
+    const headerHeight = $('header').height()
+    // スクロールした量を取得
+    const scrollAmount = $(window).scrollTop()
+
+    // スクロール量がヘッダーの高さ以上になったら
+    if (scrollAmount >= headerHeight) {
+      $('header').addClass('fixed')
+      $('#top_main').addClass('header_fixed')
+    } else {
+      $('header').removeClass('fixed')
+      $('#top_main').removeClass('header_fixed')
+    }
+  })
+
   // // ハンバーガーボタンクリック時の処理
   // $('.btnHamburger').on('click', function () {
   //   $('.btnHamburger, .coverlayer, nav').toggleClass('is-active')

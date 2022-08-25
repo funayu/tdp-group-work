@@ -10,8 +10,6 @@ body {
   font-family: '游明朝', 'Yu Mincho', YuMincho, 'Hiragino Mincho Pro', serif;
   background: #fff;
   line-height: 1.5;
-  /* letter-spacing: 0.05em; */
-  /* -webkit-text-size-adjust: 100%; */
 }
 img {
   vertical-align: bottom;
@@ -23,8 +21,16 @@ a {
 }
 
 /* SP用 */
-.br_tab {
-  display: none;
+header {
+  height: 120px;
+  width: 100%;
+}
+/* ヘッダー固定関連 */
+header.fixed {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
 }
 header h1 {
   width: 45px;
@@ -37,6 +43,10 @@ header nav {
 }
 header nav ul li a {
   color: #855339;
+}
+/* ヘッダー固定時の余白 */
+#top_main.header_fixed {
+  padding-top: 120px;
 }
 #top_main img {
   max-width: none;
@@ -433,6 +443,10 @@ footer small {
   padding-bottom: 5px;
 }
 
+/* 改行 */
+.br_tab {
+  display: none;
+}
 /* swiper用の設定 */
 .swiper-pagination-bullet {
   background: #be2720 !important;
@@ -644,8 +658,8 @@ footer small {
 @media screen and (min-width: 980px) {
   header {
     display: flex;
-    height: 120px;
     justify-content: space-between;
+    background: rgba(255, 255, 255, 0.8);
   }
   header h1 {
     margin-left: 66.5px;
