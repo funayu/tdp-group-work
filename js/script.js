@@ -31,22 +31,23 @@ $(document).ready(function () {
 
   // スムーススクロール
   // #で始まる出発地点をクリックした場合に処理を実行
-  // $('a[href^="#"]').click(function () {
-  //   // 出発地点の値を取得
-  //   const href = $(this).attr('href')
-  //   // 到着地点を取得
-  //   const target = $(href == '#' || href == '' ? 'html' : href)
+  $('a[href^="#"]').click(function () {
+    // 出発地点のhref属性を取得
+    const href = $(this).attr('href')
+    // 到着地点を取得
+    const target = $(href == '#' || href == '' ? 'html' : href)
 
-  //   // 到着地点を数値で取得
-  //   // ヘッダーと仕切り線の高さ分位置を調整する
-  //   const headerHeight = $('header').height()
-  //   // 一番高いボーダー仕切りの高さを使う、境界の調整のため+1
-  //   const position = target.offset().top - headerHeight
-  //   // スムーススクロール
-  //   $('body,html').animate({ scrollTop: position }, 500, 'swing')
-  //   // トップへ戻るボタンを押した時にボタンがちらつかないようにする
-  //   return false
-  // })
+    // ヘッダーの高さを取得
+    const headerHeight = $('header').height()
+
+    // 到着地点を数値で取得、固定ヘッダーの高さを考慮
+    const position = target.offset().top - headerHeight
+    // スムーススクロールの実行
+    $('body,html').animate({ scrollTop: position }, 500, 'swing')
+
+    // トップへ戻るボタンを押した時のボタンちらつき防止
+    return false
+  })
 
   // トップへ戻るボタンをスクロールしたら出す
   const totop = $('.to_top')
