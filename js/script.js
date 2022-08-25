@@ -1,3 +1,4 @@
+// Swiper用の設定
 const swiper = new Swiper('.swiper', {
   // ページネーションを表示する
   pagination: {
@@ -16,4 +17,44 @@ const swiper = new Swiper('.swiper', {
   effect: 'fade',
   // 次のスライドに切り替わる速度
   speed: 1500,
+})
+
+$(document).ready(function () {
+  // // ハンバーガーボタンクリック時の処理
+  // $('.btnHamburger').on('click', function () {
+  //   $('.btnHamburger, .coverlayer, nav').toggleClass('is-active')
+  // })
+  // // coverlayer上のナビゲーションボタンクリック時処理
+  // $('nav ul li a').on('click', function () {
+  //   $('.btnHamburger, .coverlayer, nav').removeClass('is-active')
+  // })
+
+  // スムーススクロール
+  // #で始まる出発地点をクリックした場合に処理を実行
+  // $('a[href^="#"]').click(function () {
+  //   // 出発地点の値を取得
+  //   const href = $(this).attr('href')
+  //   // 到着地点を取得
+  //   const target = $(href == '#' || href == '' ? 'html' : href)
+
+  //   // 到着地点を数値で取得
+  //   // ヘッダーと仕切り線の高さ分位置を調整する
+  //   const headerHeight = $('header').height()
+  //   // 一番高いボーダー仕切りの高さを使う、境界の調整のため+1
+  //   const position = target.offset().top - headerHeight
+  //   // スムーススクロール
+  //   $('body,html').animate({ scrollTop: position }, 500, 'swing')
+  //   // トップへ戻るボタンを押した時にボタンがちらつかないようにする
+  //   return false
+  // })
+
+  // トップへ戻るボタンをスクロールしたら出す
+  const totop = $('.to_top')
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      totop.fadeIn()
+    } else {
+      totop.fadeOut()
+    }
+  })
 })
