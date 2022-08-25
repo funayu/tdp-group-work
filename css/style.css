@@ -28,6 +28,7 @@ header {
   justify-content: space-between;
   position: relative;
   z-index: 100;
+  background: rgba(255, 255, 255, 0.8);
 }
 /* ヘッダー固定関連 */
 header.fixed {
@@ -45,7 +46,8 @@ header .btnHamburger {
   position: relative;
   width: 30px;
   height: 20px;
-  margin: 50px 28px;
+  padding: 10px;
+  margin: 50px 30px;
   cursor: pointer;
   z-index: 200;
 }
@@ -565,6 +567,9 @@ footer small {
   .br_tab {
     display: inline;
   }
+  header .btnHamburger {
+    margin: 50px 80px;
+  }
   article#about {
     background-position: -253% 44%;
     padding: 146px 0 80px;
@@ -754,17 +759,32 @@ footer small {
   header h1 {
     margin-left: 66.5px;
   }
+  header .btnHamburger {
+    display: none;
+  }
+  header .coverlayer {
+    display: none;
+  }
   header nav {
+    position: static;
+    opacity: 1;
     display: block;
     width: 72.058%;
   }
   header nav ul {
-    display: flex;
     padding: 48px 0;
+    flex-direction: row;
+    height: auto;
   }
   header nav ul li {
     width: 25%;
     text-align: center;
+  }
+  header nav ul li a {
+    transition: 0.8s;
+  }
+  header nav ul li a:hover {
+    opacity: 0.7;
   }
   article#about {
     background-size: 1262px auto;
