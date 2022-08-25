@@ -19,6 +19,15 @@ img {
 a {
   text-decoration: none;
 }
+/* iPhoneのSafariで角丸にならないようにする */
+input[type='button'],
+input[type='text'],
+input[type='submit'],
+input[type='image'],
+textarea {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
 
 /* SP用 */
 header {
