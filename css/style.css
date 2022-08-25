@@ -24,11 +24,14 @@ a {
 header {
   height: 120px;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 100;
 }
 /* ヘッダー固定関連 */
 header.fixed {
   position: fixed;
-  z-index: 100;
   top: 0;
   left: 0;
 }
@@ -37,13 +40,100 @@ header h1 {
   margin-left: 29px;
   padding: 10px 0;
 }
-/* TODO:ハンバーガーメニューの実装 */
+/* ハンバーガーボタン */
+header .btnHamburger {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  margin: 50px 28px;
+  cursor: pointer;
+  z-index: 200;
+}
+header .btnHamburger .line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 30px; /* 横幅 */
+  height: 4px; /* 1本辺りの高さ */
+  background: #855339; /* 線の色 */
+  /* 適用するプロパティ、変化する時間、変化する速度 */
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* 3本線の各線の位置を指定 */
+header .btnHamburger .line_01 {
+  top: 0;
+}
+header .btnHamburger .line_02 {
+  top: 8px;
+}
+header .btnHamburger .line_03 {
+  top: 16px;
+}
+/* ハンバーガーボタンクリック前 */
+/* .coverlayer */
+header .coverlayer {
+  width: 1px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+/* nav */
 header nav {
-  display: none;
+  position: fixed;
+  width: 100%;
+  top: 142px;
+  left: -100%;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 200;
+}
+header nav ul {
+  height: 376px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
 }
 header nav ul li a {
   color: #855339;
 }
+/* ハンバーガーボタンクリック後 */
+/* 最上部の線のスタイル */
+.btnHamburger.is-active .line_01 {
+  top: 8px; /* 上から2番目の線の位置に変更 */
+  /* 線を45度回転 */
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* 上から2番目の線のスタイル  */
+.btnHamburger.is-active .line_02 {
+  opacity: 0; /* 不透明度を下げて線を消す */
+}
+/* 最下部の線のスタイル */
+.btnHamburger.is-active .line_03 {
+  top: 8px; /* 上から2番目の線の位置に変更 */
+  /* 線を135度回転 */
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+/*.coverlayerクリック後*/
+.coverlayer.is-active {
+  width: 100%;
+  opacity: 0.9;
+}
+/* navクリック後 */
+header nav.is-active {
+  left: 30%;
+  transform: translateX(-30%);
+  opacity: 1;
+}
+
 /* ヘッダー固定時の余白 */
 #top_main.header_fixed {
   padding-top: 120px;

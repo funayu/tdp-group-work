@@ -37,14 +37,14 @@ $(document).ready(function () {
     }
   })
 
-  // // ハンバーガーボタンクリック時の処理
-  // $('.btnHamburger').on('click', function () {
-  //   $('.btnHamburger, .coverlayer, nav').toggleClass('is-active')
-  // })
-  // // coverlayer上のナビゲーションボタンクリック時処理
-  // $('nav ul li a').on('click', function () {
-  //   $('.btnHamburger, .coverlayer, nav').removeClass('is-active')
-  // })
+  // ハンバーガーボタンクリック時の処理
+  $('.btnHamburger').on('click', function () {
+    $('.btnHamburger, .coverlayer, nav').toggleClass('is-active')
+  })
+  // coverlayer上のナビゲーションボタンクリック時処理
+  $('nav ul li a').on('click', function () {
+    $('.btnHamburger, .coverlayer, nav').removeClass('is-active')
+  })
 
   // スムーススクロール
   // #で始まる出発地点をクリックした場合に処理を実行
